@@ -1,0 +1,6 @@
+<table class="table table-bordered table-striped">
+    <ng-content select="thead"></ng-content>
+    <tr *ngFor="let user of TableData;index as i">
+        <ng-container *ngTemplateOutlet="tbody; context: {user:user,i:i}"></ng-container>
+    </tr>
+</table>

@@ -3,14 +3,26 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { RatingComponent } from './rating/rating.component';
+import { TableComponent } from './table/table.component';
+import { OutlateComponent } from './outlate/outlate.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RatingComponent,
+    TableComponent,
+    OutlateComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

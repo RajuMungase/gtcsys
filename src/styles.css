@@ -1,1 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+
+.sr-only{
+    display:none !important;
+    color:black !important;
+}
+
+ngb-rating {
+    color: #FFC107;
+    font-size: 80px;
+}

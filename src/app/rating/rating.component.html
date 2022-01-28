@@ -1,0 +1,13 @@
+
+
+<div class="form-group">
+    <ngb-rating [formControl]="StarFiled" [max]="5"></ngb-rating>
+    <div class="form-text">
+      <div *ngIf="FormSubmitted && StarFiled.value == null" class="text-danger">{{this.error}}</div>
+      <div *ngIf="FormSubmitted && StarFiled.value != null" class="text-success">{{'Thank You For Reting ' + StarFiled.value}} Star</div>
+    </div>
+  </div>
+  
+  <button class="btn btn-primary" (click)="submit()">Submit</button>
+  
+  

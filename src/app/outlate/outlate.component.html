@@ -1,0 +1,27 @@
+<div class="row mt-3">
+    <div class="col-6 border-right">
+        <h3 class="text-center">Rating App</h3>
+        <app-rating></app-rating>
+    </div>
+    <div class="col-6 border-left">
+        <h3 class="text-center">Table App</h3>
+        <app-table [TableData]="data" [tbody]="tbody">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Mobile</th>
+                    <th>Age</th>
+                </tr>
+            </thead>
+
+            <ng-template let-user="user" let-i="i" #tbody>
+                <td>{{i+1}}</td>
+                <td>{{user.name}}</td>
+                <td>{{user.mobile}}</td>
+                <td>{{user.age}}</td>
+            </ng-template>
+            
+        </app-table>
+    </div>
+</div>
